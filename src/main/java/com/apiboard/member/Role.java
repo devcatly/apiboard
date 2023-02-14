@@ -10,15 +10,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Role {
 
-    @Id@GeneratedValue(Strategy = GenerationType.IDENTITY)
-    @Column(name ="role_id")
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "role_id")
     private Long id;
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false, unique = true)
+    @Enumerated(EnumType.STRING) // 1
+    @Column(nullable = false, unique = true) // 2
     private RoleType roleType;
 
-    public Role(RoleType roleType){
-    this.roleType = roleType;
+    public Role(RoleType roleType) {
+        this.roleType = roleType;
     }
 }
