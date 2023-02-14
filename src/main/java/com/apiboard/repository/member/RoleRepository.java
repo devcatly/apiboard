@@ -1,8 +1,8 @@
 package com.apiboard.repository.member;
 
 
-import com.apiboard.member.Role;
-import com.apiboard.member.RoleType;
+import com.apiboard.exception.member.Role;
+import com.apiboard.exception.member.RoleType;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

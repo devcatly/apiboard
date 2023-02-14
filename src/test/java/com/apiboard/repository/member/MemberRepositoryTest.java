@@ -2,17 +2,17 @@ package com.apiboard.repository.member;
 
 
 import com.apiboard.exception.MemberNotFoundException;
-import com.apiboard.member.Member;
-import com.apiboard.member.MemberRole;
-import com.apiboard.member.Role;
-import com.apiboard.member.RoleType;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
+import com.apiboard.exception.member.Member;
+import com.apiboard.exception.member.MemberRole;
+import com.apiboard.exception.member.Role;
+import com.apiboard.exception.member.RoleType;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.dao.DataIntegrityViolationException;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;

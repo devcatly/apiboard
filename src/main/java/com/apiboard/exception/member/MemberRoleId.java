@@ -1,4 +1,4 @@
-package com.apiboard.member;
+package com.apiboard.exception.member;
 
 import jakarta.persistence.Embeddable;
 import lombok.*;

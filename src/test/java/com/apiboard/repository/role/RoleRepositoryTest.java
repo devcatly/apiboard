@@ -1,15 +1,16 @@
 package com.apiboard.repository.role;
 
 import com.apiboard.exception.RoleNotFoundException;
-import com.apiboard.member.Role;
-import com.apiboard.member.RoleType;
+import com.apiboard.exception.member.Role;
+import com.apiboard.exception.member.RoleType;
 import com.apiboard.repository.member.RoleRepository;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.dao.DataIntegrityViolationException;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;

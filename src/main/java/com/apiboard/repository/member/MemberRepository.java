@@ -1,6 +1,6 @@
 package com.apiboard.repository.member;
 
-import com.apiboard.member.Member;
+import com.apiboard.exception.member.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

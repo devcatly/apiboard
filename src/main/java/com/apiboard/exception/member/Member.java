@@ -1,4 +1,4 @@
-package com.apiboard.member;
+package com.apiboard.exception.member;
 
 import com.apiboard.entity.common.EntityDate;
 import jakarta.persistence.*;
