@@ -14,7 +14,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         super.configure(web);
         // 스프링 시큐리티의 필터 연결을 설정하기 위한 오버라이딩이다.
-        // 예외가 웹접근 URL를 설정한다
+        // 예외가 웹접근 URL를 설정한다~~!!
     }
 
 
