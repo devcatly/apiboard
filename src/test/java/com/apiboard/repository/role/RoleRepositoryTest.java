@@ -20,6 +20,7 @@ class RoleRepositoryTest {
     @Autowired
     RoleRepository roleRepository;
     @PersistenceContext
+
     EntityManager em;
 
     @Test
